@@ -3,6 +3,10 @@
 sudo apt update
 sudo apt upgrade -y
 
+# Drivers
+sudo ubuntu-drivers autoinstall
+
+# Tools
 sudo apt install -y \
     apt-transport-https \
     ca-certificates \
@@ -14,18 +18,29 @@ sudo apt install -y \
     snapd \
     vim \
     terminator \
-    php \
-    git \
-    slack
+    imagemagick \
+    php-cli \
+    php-xml \
+    php-bcmath \
+    php-curl \
+    php-gd \
+    php-imagick \
+    composer \
+    git 
 
-# Spotify
-sudo snap install spotify
+# Snap
+sudo snap install phpstorm --classic
+sudo snap install spotify --classic
+sudo snap install slack --classic
 
 # yarn
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 sudo apt update
 sudo apt install -y yarn
+
+# yarn packages
+sudo yarn global add grunt-cli
 
 # docker
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
@@ -41,8 +56,10 @@ sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable
 sudo apt update
 sudo apt install -y google-chrome-stable
 
-# PHPStorm
-sudo snap install phptorm --clasic
+# git
+git config --global user.email "andrmoel@gmail.com"
+git config --global user.name "Andreas Moeller"
+
 
 # Clean up
 sudo apt autoremove -y
