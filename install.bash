@@ -35,9 +35,7 @@ sudo apt install -y \
 sudo snap install phpstorm --classic
 sudo snap install spotify --classic
 sudo snap install slack --classic
-
-# pip
-pip3 install awscli --upgrade --user
+sudo snap install aws-cli --classic
 
 # yarn
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
