@@ -27,6 +27,7 @@ sudo apt install -y \
     php-curl \
     php-gd \
     php-imagick \
+    php-mysql \
     composer \
     git \
     python3-pip
