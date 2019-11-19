@@ -14,6 +14,8 @@ sudo apt install -y \
     software-properties-common \
     exfat-fuse \
     exfat-utils \
+    gnome-tweak-tool \
+    keepassx \
     curl \
     snapd \
     vim \
@@ -26,12 +28,16 @@ sudo apt install -y \
     php-gd \
     php-imagick \
     composer \
-    git 
+    git \
+    python3-pip
 
 # Snap
 sudo snap install phpstorm --classic
 sudo snap install spotify --classic
 sudo snap install slack --classic
+
+# pip
+pip3 install awscli --upgrade --user
 
 # yarn
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
