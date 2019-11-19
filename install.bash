@@ -15,6 +15,7 @@ sudo apt install -y \
     exfat-fuse \
     exfat-utils \
     gnome-tweak-tool \
+    gnome-shell-extension-multi-monitors \
     keepassx \
     curl \
     snapd \
