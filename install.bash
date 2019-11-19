@@ -16,6 +16,9 @@ sudo apt install -y \
     exfat-utils \
     gnome-tweak-tool \
     gnome-shell-extension-multi-monitors \
+    numix-icon-theme \
+    numix-gtk-theme \
+    numix-blue-gtk-theme \
     keepassx \
     curl \
     snapd \
@@ -58,14 +61,13 @@ sudo usermod -aG docker $USER
 
 # Google Chrome
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google.list'
 sudo apt update
 sudo apt install -y google-chrome-stable
 
 # git
 git config --global user.email "andrmoel@gmail.com"
 git config --global user.name "Andreas Moeller"
-
 
 # Clean up
 sudo apt autoremove -y
