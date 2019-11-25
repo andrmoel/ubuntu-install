@@ -34,13 +34,15 @@ sudo apt install -y \
     php-mysql \
     composer \
     git \
-    python3-pip
+    python3-pip \
+    shutter
 
 # Snap
 sudo snap install phpstorm --classic
 sudo snap install spotify --classic
 sudo snap install slack --classic
 sudo snap install aws-cli --classic
+sudo snap install postman --classic
 
 # yarn
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
