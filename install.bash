@@ -54,6 +54,9 @@ sudo apt install -y yarn
 # yarn packages
 sudo yarn global add grunt-cli
 
+# increase numbers of watchers: https://stackoverflow.com/questions/26708205/webpack-watch-isnt-compiling-changed-files
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+
 # docker
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo sh -c 'echo "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable" > /etc/apt/sources.list.d/docker.list'
