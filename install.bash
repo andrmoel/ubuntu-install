@@ -35,7 +35,8 @@ sudo apt install -y \
     composer \
     git \
     python3-pip \
-    shutter
+    shutter \
+    gparted
 
 # Snap
 sudo snap install phpstorm --classic
