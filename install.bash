@@ -37,7 +37,8 @@ sudo apt install -y \
     python3-pip \
     shutter \
     gparted \
-    redis
+    redis \
+    gimp
 
 # Snap
 sudo snap install phpstorm --classic
