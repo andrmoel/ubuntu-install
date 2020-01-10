@@ -34,6 +34,7 @@ sudo apt install -y \
     php-mysql \
     composer \
     git \
+    mysql-workbench \
     python3-pip \
     shutter \
     gparted \
