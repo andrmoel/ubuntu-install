@@ -32,6 +32,7 @@ sudo apt install -y \
     php-gd \
     php-imagick \
     php-mysql \
+    php-mbstring \
     composer \
     git \
     mysql-workbench \
