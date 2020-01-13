@@ -75,6 +75,10 @@ sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable
 sudo apt update
 sudo apt install -y google-chrome-stable
 
+# Symfony
+wget https://get.symfony.com/cli/installer -O - | bash
+sudo mv $HOME/.symfony/bin/symfony /usr/local/bin/symfony
+
 # git
 git config --global user.email "andrmoel@gmail.com"
 git config --global user.name "Andreas Moeller"
