@@ -20,6 +20,7 @@ sudo apt install -y \
     numix-gtk-theme \
     numix-blue-gtk-theme \
     keepassx \
+    thunderbird \
     curl \
     snapd \
     vim \
