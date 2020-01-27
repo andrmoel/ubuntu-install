@@ -24,6 +24,7 @@ sudo apt install -y \
     curl \
     snapd \
     vim \
+    rar \
     terminator \
     imagemagick \
     php-cli \
