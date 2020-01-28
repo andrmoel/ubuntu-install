@@ -50,6 +50,7 @@ sudo snap install spotify --classic
 sudo snap install slack --classic
 sudo snap install aws-cli --classic
 sudo snap install postman --classic
+sudo snap install teams-for-linux
 
 # yarn
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
