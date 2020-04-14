@@ -42,7 +42,8 @@ sudo apt install -y \
     shutter \
     gparted \
     redis \
-    gimp
+    gimp \
+    stellarium
 
 # Snap
 sudo snap install phpstorm --classic
@@ -51,6 +52,7 @@ sudo snap install slack --classic
 sudo snap install aws-cli --classic
 sudo snap install postman --classic
 sudo snap install teams-for-linux
+sudo snap connect teams-for-linux:camera core:camera
 
 # yarn
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
