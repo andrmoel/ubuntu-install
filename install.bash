@@ -39,7 +39,6 @@ sudo apt install -y \
     git \
     mysql-workbench \
     python3-pip \
-    shutter \
     gparted \
     redis \
     gimp \
@@ -48,6 +47,7 @@ sudo apt install -y \
 # Snap
 sudo snap install phpstorm --classic
 sudo snap install spotify --classic
+sudo snap install shutter --classic
 sudo snap install slack --classic
 sudo snap install aws-cli --classic
 sudo snap install postman --classic
