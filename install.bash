@@ -50,6 +50,7 @@ sudo snap install spotify --classic
 sudo snap install shutter --classic
 sudo snap install slack --classic
 sudo snap install aws-cli --classic
+sudo snap install terraform --classic
 sudo snap install postman --classic
 sudo snap install teams-for-linux
 sudo snap connect teams-for-linux:camera core:camera
