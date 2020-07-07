@@ -42,7 +42,8 @@ sudo apt install -y \
     gparted \
     redis \
     gimp \
-    stellarium
+    stellarium \
+    libreoffice
 
 # Snap
 sudo snap install phpstorm --classic
