@@ -60,6 +60,7 @@ sudo snap connect mysql-workbench-community:password-manager-service :password-m
 sudo snap install teams-for-linux
 sudo snap connect teams-for-linux:camera core:camera
 sudo snap install zoom-client
+sudo snap install android-studio --classic
 
 # yarn
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
