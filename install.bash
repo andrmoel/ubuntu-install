@@ -61,6 +61,7 @@ sudo snap install teams-for-linux
 sudo snap connect teams-for-linux:camera core:camera
 sudo snap install zoom-client
 sudo snap install android-studio --classic
+sudo snap install jdownloader2
 
 # yarn
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
