@@ -35,7 +35,6 @@ sudo apt install -y \
     php-imagick \
     php-mysql \
     php-mbstring \
-    composer \
     git \
     python3-pip \
     gparted \
@@ -89,6 +88,11 @@ wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-ke
 sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google.list'
 sudo apt update
 sudo apt install -y google-chrome-stable
+
+# Composer
+cd ~
+curl -sS https://getcomposer.org/installer -o composer-setup.php
+sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 
 # Symfony
 wget https://get.symfony.com/cli/installer -O - | bash
