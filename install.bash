@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+cd ~
+
 sudo apt update
 sudo apt upgrade -y
 
@@ -91,7 +93,6 @@ sudo apt update
 sudo apt install -y google-chrome-stable
 
 # Composer
-cd ~
 curl -sS https://getcomposer.org/installer -o composer-setup.php
 sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 
