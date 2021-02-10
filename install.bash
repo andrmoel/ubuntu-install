@@ -21,6 +21,7 @@ sudo apt install -y \
     numix-blue-gtk-theme \
     keepassx \
     thunderbird \
+    filezilla \
     curl \
     snapd \
     vim \
