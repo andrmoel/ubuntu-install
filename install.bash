@@ -56,7 +56,6 @@ sudo snap install slack --classic
 sudo snap install aws-cli --classic
 sudo snap install terraform --classic
 sudo snap install postman --classic
-sudo snap install postman --classic
 sudo snap install mysql-workbench-community
 sudo snap connect mysql-workbench-community:password-manager-service :password-manager-service
 sudo snap install teams-for-linux
