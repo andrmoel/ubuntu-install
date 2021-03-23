@@ -32,6 +32,7 @@ sudo apt install -y \
     imagemagick \
     php-cli \
     php-xml \
+    php-yaml \
     php-bcmath \
     php-curl \
     php-gd \
