@@ -10,6 +10,8 @@ sudo ubuntu-drivers autoinstall
 
 # Tools
 sudo apt install -y \
+    openjdk-14-jdk \
+    android-sdk \
     apt-transport-https \
     ca-certificates \
     gnupg-agent \
@@ -24,6 +26,7 @@ sudo apt install -y \
     keepassx \
     thunderbird \
     filezilla \
+    ruby-full \
     curl \
     snapd \
     vim \
@@ -46,8 +49,7 @@ sudo apt install -y \
     gimp \
     stellarium \
     libreoffice \
-    libcanberra-gtk-module \
-    android-sdk
+    libcanberra-gtk-module
 
 # Snap
 sudo snap install phpstorm --classic
