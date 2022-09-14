@@ -66,6 +66,7 @@ sudo snap connect teams-for-linux:camera core:camera
 sudo snap install zoom-client
 sudo snap install android-studio --classic
 sudo snap install jdownloader2
+sudo snap install vlc
 
 # gem
 sudo gem install cocoapods
