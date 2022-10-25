@@ -86,6 +86,7 @@ sudo apt install -y yarn
 # yarn packages
 sudo yarn global add grunt-cli
 sudo yarn global add expo-cli
+sudo yarn global add aws-cdk
 
 # increase numbers of watchers: https://stackoverflow.com/questions/26708205/webpack-watch-isnt-compiling-changed-files
 echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
