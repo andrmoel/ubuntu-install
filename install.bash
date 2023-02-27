@@ -97,7 +97,7 @@ echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo s
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo sh -c 'echo "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable" > /etc/apt/sources.list.d/docker.list'
 sudo apt update
-sudo apt install -y docker-ce docker-compose
+sudo apt-get install docker-ce=17.09.1~ce-0~debian docker-compose
 sudo groupadd docker
 sudo usermod -aG docker $USER
 
