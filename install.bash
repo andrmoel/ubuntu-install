@@ -59,6 +59,7 @@ sudo snap install slack --classic
 sudo snap install aws-cli --classic
 sudo snap install terraform --classic
 sudo snap install postman --classic
+sudo snap install docker
 sudo snap install mysql-workbench-community
 sudo snap connect mysql-workbench-community:password-manager-service :password-manager-service
 sudo snap install teams-for-linux
@@ -94,10 +95,7 @@ sudo yarn global add aws-cdk
 echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
 
 # docker
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-sudo sh -c 'echo "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable" > /etc/apt/sources.list.d/docker.list'
-sudo apt update
-sudo apt-get install docker-ce=17.09.1~ce-0~debian docker-compose
+sudo apt install docker-compose
 sudo groupadd docker
 sudo usermod -aG docker $USER
 
