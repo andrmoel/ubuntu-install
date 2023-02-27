@@ -59,7 +59,6 @@ sudo snap install slack --classic
 sudo snap install aws-cli --classic
 sudo snap install terraform --classic
 sudo snap install postman --classic
-sudo snap install docker
 sudo snap install mysql-workbench-community
 sudo snap connect mysql-workbench-community:password-manager-service :password-manager-service
 sudo snap install teams-for-linux
@@ -95,7 +94,11 @@ sudo yarn global add aws-cdk
 echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
 
 # docker
-sudo apt install docker-compose
+sudo apt install apt-transport-https ca-certificates curl software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt update
+sudo apt install docker-ce docker-compose
 sudo groupadd docker
 sudo usermod -aG docker $USER
 
